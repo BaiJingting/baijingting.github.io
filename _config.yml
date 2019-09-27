@@ -1,24 +1,22 @@
 # Basic
-title: 蒲公英
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: 哎呀是小白
+subtitle:
+description: 欢迎来到我的小站～
 # 头像里面的标题
-avatarTitle: puluwen
+avatarTitle: 白白
 # 头像里面的描述
-avatarDesc: 文本情感分析
-url: "https://puluwen.github.io"
+avatarDesc: 呀你找到我了！
+url: "https://baijingting.github.io"
 
 # Comment
 # comment:
-#    disqus: puluwen
-    # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
-    weibo: 18670952936 
-    github: puluwen
+    weibo:
+    github: baijingting
     # twitter: 
-    mail: 276898459@qq.com
+    mail: baijt@ruc.edu.cn
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
@@ -30,16 +28,6 @@ social:
 # ga:
 #    id: UA-84134159-3   
 #    host: auto  
-
-
-# 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/puluwen/puluwen.github.io
-#
-#
-# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
 
 
 permalink: /:year/:month/:title/
