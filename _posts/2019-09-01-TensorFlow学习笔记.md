@@ -8,6 +8,8 @@
 ​	tf.ones_initializer()，也可以简写为tf.Ones()
 ```
 
+
+
 ###### tf.truncated_normal_initializer()
 
 ```
@@ -15,11 +17,15 @@
 参数为（mean=0.0, stddev=1.0, seed=None, dtype=dtypes.float32），分别用于指定均值、标准差、随机数种子和随机数的数据类型，一般只需要设置stddev这一个参数就可以了。
 ```
 
+
+
 ###### tf.random_normal_initializer()
 
 ```
 生成标准正态分布的随机数。
 ```
+
+
 
 ###### tf.random_uniform_initializer()
 
@@ -28,11 +34,15 @@
 参数为（minval=0, maxval=None, seed=None, dtype=dtypes.float32），分别用于指定最小值，最大值，随机数种子和类型。
 ```
 
+
+
 ###### tf.uniform_unit_scaling_initializer()
 
 ```
 和均匀分布差不多，只是不需要指定最小最大值，通过计算得出。
 ```
+
+
 
 ##### 其他
 
@@ -40,6 +50,8 @@
 
 	参数为（tensor, shape, name=None），将tensor变换为参数shape的形式。
 	shape为一个列表，其中可以存在-1，表示不用指定这一维的大小，函数会自动计算，但列表中只能存在一个-1。（当然如果存在多个-1，就是一个存在多解的方程了）
+
+
 ###### tf.one_hot()
 
 ```
@@ -53,11 +65,15 @@
    name=None
 ```
 
+
+
 ###### tf.gather()
 
 ```
 参数为（params, indices, validate_indices=None, name=None），按照指定的下标集合从axis=0中抽取子集，适合抽取不连续区域的子集
 ```
+
+
 
 ###### tf.slice()
 
@@ -68,11 +84,15 @@ size为切片的尺寸，表示输出tensor的数据维度，其中size[i]表示
 begin为切片的开始位置，表示切片相对于输入数据input_的每一个偏移量。
 ```
 
+
+
 ###### tf.cast()
 
 ```
 类型转换
 ```
+
+
 
 ###### tf.transpose()
 
