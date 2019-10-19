@@ -1,6 +1,11 @@
-| layout | tag        |
-| ------ | ---------- |
-| post   | Tensorflow |
+---
+layout: post
+title: "Tensorflow学习笔记"
+date: 2019-09-01
+description: ""
+tag: Tensorflow
+
+---
 
 ##### 参数初始化
 
