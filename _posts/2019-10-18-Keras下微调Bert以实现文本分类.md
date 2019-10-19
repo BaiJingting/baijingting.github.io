@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Keras下微调Bert以实现文本分类"
 date: 2019-10-18
@@ -9,7 +8,7 @@ tag: NLP
 ---
 **[智源&计算所-互联网虚假新闻检测挑战赛](https://biendata.com/competition/falsenews/)**   
 
-我的代码 [https://github.com/BaiJingting/Fake_News_Detection](
+我的代码 [https://github.com/BaiJingting/Fake_News_Detection](https://github.com/BaiJingting/Fake_News_Detection)
 
 首先，对样本进行了解及分析，文本长度的情况影响到下面的max_length参数。
 
