@@ -2,7 +2,7 @@
 
 layout: post
 title: "广义线性模型——线性回归、逻辑回归、SoftMax回归"
-date: 2019-09-27
+date: 2019-08-20
 description: ""
 tag: 机器学习
 
