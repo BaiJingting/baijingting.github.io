@@ -1,4 +1,4 @@
-------
+---
 
 layout: post
 title: "广义线性模型——线性回归、逻辑回归、SoftMax回归"
