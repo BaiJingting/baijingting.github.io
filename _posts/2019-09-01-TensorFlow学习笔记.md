@@ -1,3 +1,7 @@
+| layout | tag        |
+| ------ | ---------- |
+| post   | Tensorflow |
+
 ##### 参数初始化
 
 ###### tf.constant_initializer()：
