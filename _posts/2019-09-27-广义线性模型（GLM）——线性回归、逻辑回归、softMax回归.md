@@ -1,62 +1,93 @@
 #### 广义线性模型（GLM）——线性回归、逻辑回归、softMax回归
 
  ​      广义线性模型中，假设每个观测值 $$y$$ 来自某个指数族分布，该分布的平均数 $\mu$ 可由与该点的已知变量 $$X$$ 解释：
+
 $$
 E(y) = \mu = g^{-1}(X\beta)
 $$
+
 ​      $$E(y)$$ 为 $$y$$ 的期望值，$$X\beta$$ 是由未知待估计参数 $$\beta$$ 与已知变量 $$X$$ 构成的线性估计式，$$g$$ 为链接函数。
+
 
 ##### 指数族
 
 ​      包括许多常见的分布，如正态分布、$$Bernouli$$ 分布、$$Poisson$$ 分布、$$Gamma$$ 分布等，可以用如下形式表达：
+
 $$
 f(x|\theta) = h(x)exp(\eta(\theta)T(x) - A(\theta))
 $$
 
-##### 线性回归                                             
+
+##### 线性回归        
+                                     
 $$
 Y=X\beta
 $$
+
 ​      基本假定： 1，线性性 & 可加性；
+
 ​                         2，误差项之间相互独立，服从同方差的正态分布；
+
 ​                         3，自变量之间相互独立。
+
 ​      $$y$$ 服从正态分布：
+
 $$
 P(y) = \frac{1}{\sqrt{2\pi}\sigma}exp(-(y-\mu)^2)
 $$
+
 ​      对数极大似然函数（可得到线性回归的平方损失）：
+
 $$
 l = - \Sigma_{i=1}^n(\log(\sqrt{2\pi}\sigma) + (y_i - \mu)^2)
 $$
 
+
 ##### 逻辑回归
+
 ​      $$y$$ 服从 $$Bernouli$$ 分布：
+
 $$
 P(y) = p^y(1-p)^{1-y}
 $$
+
 ​      对数极大似然函数（可得到逻辑回归的交叉熵损失）：
+
 $$
 l = \Sigma_{i=1}^n(y_i\log(\frac{p}{1-p}) + \log(1-p))
 $$
+
 ​      令 $$\lambda = \log(\frac{p}{1-p})$$  (用 $$X\beta$$ 预测) , 
+
 $$
-p = E(y) = \frac{1}{1+e^{-\lambda}} =  \frac{1}{1+e^{-X\beta}} \\
+p = E(y) = \frac{1}{1+e^{-\lambda}} =  \frac{1}{1+e^{-X\beta}} 
+$$
+
+$$
 l = \Sigma_{i=1}^n(y_i\lambda - \log(1+e^\lambda)) = \Sigma_{i=1}^n(y_iX_i\beta - \log(1+e^{X_i\beta}))
 $$
 
+
 ##### $$SoftMax$$ 回归
+
 ​      $$y$$ 服从有 $$k$$ 个取值的 $$Multinoulli$$ 分布:
+
 $$
 P(y) = p_1^{I_{y=1}}p_2^{I_{y=2}}...p_k^{I_{y=k}}
 $$
+
 ​      对数极大似然函数（可得到逻辑回归的交叉熵损失）：
+
 $$
 l = \Sigma_{i=1}^n(I_{y_i=1}\log(\frac{p_1}{p_k}) + ... + I_{y_i=k-1}\log(\frac{p_{k-1}}{p_k}))
 $$
+
 ​      令 $$\log(\frac{p_1}{p_k}) = \phi_1 ,..., \log(\frac{p_{k-1}}{p_k}) = \phi_{k-1}$$ , 由 $$p_1 + ... + p_{k-1} + p_k = 1$$, 可得：
+
 $$
 p_i = \frac{e^{\phi_i}}{\Sigma_{j=1}^ke^{\phi_j}} $$ ,    $$\phi^k = 0
 $$
+
 
 逻辑回归和 $$SoftMax$$ 的适用于二分类和多分类问题，可以预测每个类别发生的概率。
 
