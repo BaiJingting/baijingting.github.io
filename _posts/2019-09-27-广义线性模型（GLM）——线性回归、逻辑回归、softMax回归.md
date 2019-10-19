@@ -83,7 +83,7 @@ $$
 ​      令 $$\log(\frac{p_1}{p_k}) = \phi_1 ,..., \log(\frac{p_{k-1}}{p_k}) = \phi_{k-1}$$ , 由 $$p_1 + ... + p_{k-1} + p_k = 1$$, 可得：
 
 $$
-p_i = \frac{e^{\phi_i}}{\Sigma_{j=1}^ke^{\phi_j}} $$ ,    $$\phi^k = 0
+p_i = \frac{e^{\phi_i}}{\Sigma_{j=1}^ke^{\phi_j}} \\\phi^k = 0
 $$
 
 
