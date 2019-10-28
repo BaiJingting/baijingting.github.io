@@ -10,6 +10,19 @@ tag: NLP
 
 我的代码 [https://github.com/BaiJingting/Fake_News_Detection](https://github.com/BaiJingting/Fake_News_Detection)
 
+训练集和验证集准召都98%+
+
+| 模型及参数                                               | 线上F1 |
+| -------------------------------------------------------- | ------ |
+| Bert_base (max_length=188)                               | 88.69% |
+| Bert_base (max_length=256)                               | 88.76% |
+| Albert_large (max_length=188)                            | 89.73% |
+| （小伙伴的）三个线上F1 86%+的模型probability平均得到结果 | 91.13% |
+
+集成的方法线上效果明显提升，但由于实际应用中受到机器资源及预测时间的限制，几乎不可能使用几个Bert+的模型进行集成，所以这种方法我没有用。
+
+------
+
 首先，对样本进行了解及分析，文本长度的情况影响到下面的max_length参数。
 
 ```python
