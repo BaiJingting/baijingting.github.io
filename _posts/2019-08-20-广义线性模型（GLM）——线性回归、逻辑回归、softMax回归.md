@@ -16,7 +16,7 @@ $$
 ​		$$E(y)$$ 为 $$y$$ 的期望值，$$X\beta$$ 是由未知待估计参数 $$\beta$$ 与已知变量 $$X$$ 构成的线性估计式，$$g$$ 为链接函数。
 
 
-#### 指数族
+#### 一, 指数族
 
 ​		包括许多常见的分布，如正态分布、$$Bernouli$$ 分布、$$Poisson$$ 分布、$$Gamma$$ 分布等，可以用如下形式表达：
 
@@ -25,7 +25,7 @@ f(x|\theta) = h(x)exp(\eta(\theta)T(x) - A(\theta))
 $$
 
 
-#### 线性回归        
+#### 二, 线性回归        
 
 $$
 Y=X\beta
@@ -50,7 +50,7 @@ l = - \Sigma_{i=1}^n(\log(\sqrt{2\pi}\sigma) + (y_i - \mu)^2)
 $$
 
 
-#### 逻辑回归
+#### 三, 逻辑回归
 
 ​		$$y$$ 服从 $$Bernouli$$ 分布：
 
@@ -75,7 +75,7 @@ l = \Sigma_{i=1}^n(y_i\lambda - \log(1+e^\lambda)) = \Sigma_{i=1}^n(y_iX_i\beta 
 $$
 
 
-#### $$SoftMax$$ 回归
+#### 四, $$SoftMax$$ 回归
 
 ​		$$y$$ 服从有 $$k$$ 个取值的 $$Multinoulli$$ 分布:
 
