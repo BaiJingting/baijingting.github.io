@@ -3,7 +3,7 @@ layout: post
 title: "Keras下微调Bert以实现文本分类"
 date: 2019-10-18
 description: ""
-tag: NLP
+tag: 比赛记录
 
 ---
 **[智源&计算所-互联网虚假新闻检测挑战赛](https://biendata.com/competition/falsenews/)**   
@@ -20,6 +20,8 @@ tag: NLP
 | （小伙伴的）三个线上F1 86%+的模型probability平均得到结果 | 91.13% |
 
 集成的方法线上效果明显提升，但由于实际应用中受到机器资源及预测时间的限制，几乎不可能使用几个Bert+的模型进行集成，所以这种方法我没有用。
+
+（👆的效果只对Bert调了max_length，只能作为baseline，后续调整[文本分类优化方向](https://baijingting.github.io/2019/10/文本分类优化方向/)也在👇的代码里，不过比赛已经结束，没有经过线上验证）
 
 ------
 
