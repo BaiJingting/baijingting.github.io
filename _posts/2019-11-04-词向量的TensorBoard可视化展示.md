@@ -2,7 +2,7 @@
 
 layout: post
 title: "词向量的TensorBoard可视化展示"
-date: 2019-08-20
+date: 2019-11-04
 description: ""
 tag: NLP
 
