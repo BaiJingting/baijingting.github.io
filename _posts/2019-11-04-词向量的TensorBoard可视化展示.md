@@ -108,8 +108,8 @@ def visualisation(words, embeddings, log_path):
 
 再在命令行输入 tensorboard --logdir=「log目录」
 
-![image-20191112203341178](https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203341178.png)
+![image-20191112203341178](https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203341178.png?raw=true)
 
 打开链接即可观察到相应结果。（这里的词向量只是初版，效果还不好😓）
 
-<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203513856.png" alt="image-20191112203513856" style="zoom:50%;" />
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203513856.png?raw=true" alt="image-20191112203513856" style="zoom:50%;" />
