@@ -34,22 +34,34 @@ SNE是通过仿射(affinitie)变换将数据点映射到概率分布上，主要
 SNE模型是非监督的降维，不能通过训练得到模型之后再用于其它数据集，只能单独的对某个数据集做操作。
 
 首先将欧几里得距离转换为条件概率来表达点与点之间的相似度，即：
+
+
 $$
 p_{j∣i}=\frac{exp(−∣∣x_i−x_j∣∣^2/(2σ_i^2))}{\sum_{k≠i}exp(−∣∣x_i−x_k∣∣^2/(2σ_i^2))}
 $$
 
+
+
 其中参数是 $$\sigma_i$$ 对于不同的 $$x_i$$ 取值不同，后续会讨论如何设置。此外设置 $$p_{i|i} = 0$$， 因为我们关注的是两两之间的相似度。
 
 对于低维度下的 $$y_i$$，我们可以指定高斯分布为方差为 $$\frac{1}{\sqrt{2}}$$，因此它们之间的相似度如下:
+
+
 $$
 q_{j∣i}=\frac{exp(−∣∣x_i−x_j∣∣^2)}{\sum_{k≠i}exp(−∣∣x_i−x_k∣∣^2)}
 $$
+
+
 同样设定 $$q_{i|i} = 0$$。
 
 如果降维的效果比较好，局部特征保留完整，那么 $$p_{j∣i} = q_{j∣i}$$， 因此我们优化两个分布之间的距离，即KL散度(Kullback-Leibler divergences)，目标函数 (cost function) 为:
+
+
 $$
 C=\sum_iKL(P_i∣∣Q_i)=\sum_i\sum_jp_{j∣i}\log \frac{p_{j∣i}}{q_{j∣i}}
 $$
+
+
 $$P_i$$ 表示了给定点 $$x_i$$ 下，其他所有数据点的条件概率分布。
 
 #### 三、TensorBoard PROJECTOR词向量可视化
@@ -96,8 +108,8 @@ def visualisation(words, embeddings, log_path):
 
 再在命令行输入 tensorboard --logdir=「log目录」
 
-![image-20191112203341178](/Users/baijingting/Library/Application Support/typora-user-images/image-20191112203341178.png)
+![image-20191112203341178](https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203341178.png)
 
 打开链接即可观察到相应结果。（这里的词向量只是初版，效果还不好😓）
 
-<img src="/Users/baijingting/Library/Application Support/typora-user-images/image-20191112203513856.png" alt="image-20191112203513856" style="zoom:50%;" />
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203513856.png" alt="image-20191112203513856" style="zoom:50%;" />
