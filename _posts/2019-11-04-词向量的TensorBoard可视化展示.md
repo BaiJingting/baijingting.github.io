@@ -8,7 +8,7 @@ tag: NLP
 
 ---
 
-embedding 的效果很难直接用量化的指标来衡量，通常是结合后续NLP任务的效果来评判，比如文本分类。为了更直观的了解 embedding 向量的效果，TensorBoard 提供了PROJECTOR 界面，通过PCA，T-SNE等方法将高维向量投影到三维坐标系，来可视化 embedding 向量之间的关系。
+embedding 的效果很难直接用量化的指标来衡量，通常是结合后续NLP任务的效果来评判，比如文本分类。为了更直观的了解 embedding 向量的效果，TensorBoard 提供了PROJECTOR 界面，通过PCA，T-SNE等方法将高维向量投影到二维或三维坐标系，来可视化 embedding 向量之间的关系。
 
 首先介绍下 PCA 和 T-SNE 的原理，再介绍 TensorBoard PROJECTOR 的使用。
 
