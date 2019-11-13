@@ -167,6 +167,7 @@ def visualisation(words, embeddings, log_path):
 
 ![image-20191112203341178](https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203341178.png?raw=true)
 
-打开链接即可观察到相应结果。（这里的词向量只是初版，效果还不好😓）
-
-<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191112203513856.png?raw=true" alt="image-20191112203513856" style="zoom:50%;" />
+打开链接即可观察到相应结果。
+PCA中三个主成分的累计方差贡献率只有14.9%，对向量的低维展示效果不如T-SNE。
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/0c544970e640027a059cb91f2.png?raw=true" alt="image-20191112203513856" style="zoom:50%;" />
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/1a11bacae1a731a4b9141855e.png?raw=true" alt="image-20191112203513856" style="zoom:50%;" />
