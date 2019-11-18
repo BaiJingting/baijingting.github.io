@@ -200,7 +200,7 @@ $$
 
 pLSA中每个文档都有固定的主题分布，参数随文档数量的增加而线性增加，并且不具备对新来文档分析主题分布的能力。LDA在pLSA的基础上加上了贝叶斯框架，文档主题的分布不是固定的分布，而是服从一个狄利克雷先验分布。各主题下词的分布也不是固定的，也服从一个狄利克雷先验分布。
 
-<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191119005018346.png?raw=true" alt="image-20191119005018346" style="zoom:50%;" />
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191119005018346.png?raw=true" alt="image-20191119005018346" style="zoom:30%;" />
 
 
 
@@ -254,9 +254,13 @@ LDA 模型认为自然文本中每个文档的主题分布的先验为 Dirichlet
 |         $$W$$         |  $$M×N$$矩阵   | 词语编号矩阵形式                                             |
 
 首先考虑模型的联合概率分布（为了简化分析，假设所有文档长度相同，为 $$N$$）：
+
+
 $$
 P(W,Z,θ,ϕ;α,β)=\prod_{i=1}^KP(ϕ_i;β)\prod_{j=1}^MP(θ_j;α)\prod_{t=1}^NP(Z_j,t|θ_j)P(w_{j,t}|ϕ_{z_{j,t}})
 $$
+
+
 使用Gibbs采样求解极大似然函数。
 
 <u>//TODO 搞明白Gibbs采样的求解过程。</u>
