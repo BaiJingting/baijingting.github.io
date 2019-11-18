@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "文本分类优化方向"
+title: "文本分类优化方向及Bert、Roberta、Ernie、Albert模型对比"
 date: 2019-10-31
 description: ""
 tag: NLP
