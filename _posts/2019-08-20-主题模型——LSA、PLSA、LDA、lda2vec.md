@@ -1,3 +1,13 @@
+---
+
+layout: post
+title: "主题模型——LSA、PLSA、LDA、lda2vec"
+date: 2019-08-20
+description: ""
+tag: NLP
+
+---
+
 主题模型主要有：潜在语义分析（LSA）、概率潜在语义分析（pLSA）、潜在狄利克雷分布（LDA）和基于深度学习的lda2vec。所有的主题模型都基于相同的基本假设：
 
 - 每个文档包含多个主题；
