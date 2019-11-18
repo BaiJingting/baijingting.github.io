@@ -65,14 +65,17 @@ def get_svd_decomposition(sentences):
 pLSA采取概率方法替代 SVD 以解决问题，其核心思想是找到一个潜在主题的概率模型，对于每个文档，存在一个主题上的概率分布，每个主题下的词也服从一个概率分布，pLSA假定这两个分布都是多项式分布。
 
 假设有M篇文档，一共有K个可选的主题，V个可选的词。对于每个文档，每个位置的词都由文档$$\longrightarrow$$主题$$\longrightarrow$$词产生。pLSA生成文档的过程如下：
+
+
 $$
 for \;\ i \;\ in \;\ range(M): \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \\
 \quad for \;\ j \;\ in \;\ range(W_i):  \qquad   //W_i 为第i个文档的单词总数 \qquad \quad \\
 \qquad 从服从多项式分布的 K 个主题中产生主题 t_k \qquad\qquad\qquad\quad \\
 \qquad 从主题 t_k 对应的词分布(多项式分布)中产生词 \qquad\qquad\qquad\;\;
 $$
-第m篇文档$$d_m$$中的每个词的生成概率为
 
+
+第m篇文档$$d_m$$中的每个词的生成概率为
 
 $$
 p(w|d_m) = \sum_{z=1}^Kp(w|z)p(z|d_m) = \sum_{z=1}^K\phi_{zw}\theta_{mz}
