@@ -68,10 +68,10 @@ pLSA采取概率方法替代 SVD 以解决问题，其核心思想是找到一�
 
 
 $$
-for \;\ i \;\ in \;\ range(M): \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \\
+for \;\ i \;\ in \;\ range(M): \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \\
 \quad for \;\ j \;\ in \;\ range(W_i):  \qquad   //W_i 为第i个文档的单词总数 \qquad \quad \\
 \qquad 从服从多项式分布的 K 个主题中产生主题 t_k \qquad\qquad\qquad\quad \\
-\qquad 从主题 t_k 对应的词分布(多项式分布)中产生词 \qquad\qquad\qquad\;\;
+\qquad 从主题 t_k 对应的词分布(多项式分布)中产生词 \qquad\qquad\qquad\;
 $$
 
 
