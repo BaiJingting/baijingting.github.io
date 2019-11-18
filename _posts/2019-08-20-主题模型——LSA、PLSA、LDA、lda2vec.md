@@ -25,7 +25,7 @@ A = U\Sigma V^T \approx U_t\Sigma_tV_t^T\\
 $$
 
 
-<img src="/Users/baijingting/Library/Application Support/typora-user-images/image-20191116181552571.png" alt="image-20191116181552571" style="zoom:17%;" />
+<img src="https://github.com/BaiJingting/baijingting.github.io/blob/master/images/posts/image-20191116181552571.png?raw=true" alt="image-20191116181552571" style="zoom:17%;" />
 
 LSA的缺点：
 
