@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "主题模型——LSA、PLSA、LDA、lda2vec"
+title: "主题模型——LSA、pLSA、LDA、lda2vec"
 date: 2019-08-20
 description: ""
 tag: NLP
