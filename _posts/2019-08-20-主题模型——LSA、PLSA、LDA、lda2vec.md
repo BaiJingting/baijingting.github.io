@@ -9,8 +9,6 @@
 - 不同单词的相似度
 - 术语（或「query」）与文档的相似度（信息检索中检索与查询最相关的段落）
 
-<img src="/Users/baijingting/Library/Application Support/typora-user-images/image-20191116173000790.png" alt="image-20191116173000790" style="zoom:40%;" />
-
 
 
 #### LSA (潜在语义分析)
