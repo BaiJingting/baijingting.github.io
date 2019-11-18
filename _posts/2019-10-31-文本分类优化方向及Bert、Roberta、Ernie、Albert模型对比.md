@@ -27,7 +27,7 @@ word_ngrams                n-gram 设置 default 1
 loss                       损失函数 {ns,hs,softmax} default ns
 ```
 
-- 文本预处理（见👇第四点）；
+- 文本预处理（见👇第三点）；
 - kfold交叉验证；
 - 结合其他一些业务上的特征（将特征和文本一同作为fastText输入）；
 - 集成策略；
@@ -55,7 +55,18 @@ loss                       损失函数 {ns,hs,softmax} default ns
 
 
 
-### 三，Bert、Roberta、Ernie和Albert的对比
+### 三，常用的文本预处理tricks
+
+- 分词
+- wordpiece (针对英文)
+- 去停用词
+- 词性筛选
+- 文本泛化（链接、电话号码、邮箱、命名实体的统一替换）
+- 异常数据的去除
+
+
+
+### 四，Bert、Roberta、Ernie和Albert的对比
 
 **Bert**：[Bert原理及源码解读](https://baijingting.github.io/2019/10/Bert原理及源码解读/)
 
@@ -86,16 +97,3 @@ Albert的Factorized Embedding Parameterization主要是大幅减少模型参数�
 | Albert-large | 83.94% |
 
 Albert论文的实验里也说明，有些数据集和任务上，Bert表现更优，有些Albert更优。
-
-
-
-### 四，常用的文本预处理tricks
-
-- 分词
-- wordpiece (针对英文)
-- 去停用词
-- 词性筛选
-- 文本泛化（链接、电话号码、邮箱、命名实体的统一替换）
-- 异常数据的去除
-
-
