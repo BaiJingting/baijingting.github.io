@@ -264,9 +264,6 @@ $$
 使用Gibbs采样求解极大似然函数。
 
 <u>//TODO 搞明白Gibbs采样的求解过程。</u>
-
-</u>
-
 ```python
 import jieba.posseg as pseg
 from gensim.models import LdaModel
@@ -308,6 +305,7 @@ lda.update(corpus2)
 print(lda[doc_bow])
 
 ```
+
 
 
 #### Lda2Vec
