@@ -265,6 +265,49 @@ $$
 
 <u>//TODO 搞明白Gibbs采样的求解过程。</u>
 
+</u>
+
+```python
+import jieba.posseg as pseg
+from gensim.models import LdaModel
+from gensim.corpora import Dictionary
+
+def get_data_seg(sentences, pos_keep=None, stop_words=None):
+    """
+    对文本进行分隔，过滤停用词，保留部分词性
+    :param sentences: list of string
+    :param pos_keep: set()
+    :param stop_words: set()
+    :return:
+    """
+    train_data = []
+    for line in sentences:
+        line_seg = []
+        for word, pos in pseg.cut(line):
+            if pos_keep and (pos not in pos_keep):
+                continue
+            if stop_words and word in stop_words:
+                continue
+            line_seg.append(word)
+        train_data.append(line_seg)
+    return train_data
+
+
+dictionary = Dictionary(data)
+corpus = [dictionary.doc2bow(text) for text in data]
+
+# train model
+lda = LdaModel(corpus=corpus, id2word=dictionary, num_topics=100)
+
+# get topic probability distribution for a document
+doc_bow = Dictionary.doc2bow(new_text.split())
+print(lda[doc_bow])
+
+# update the LDA model with additional documents
+lda.update(corpus2)
+print(lda[doc_bow])
+
+```
 
 
 #### Lda2Vec
