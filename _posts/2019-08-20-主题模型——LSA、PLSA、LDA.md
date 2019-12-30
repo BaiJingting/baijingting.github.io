@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "主题模型——LSA、pLSA、LDA、lda2vec"
+title: "主题模型——LSA、pLSA、LDA"
 date: 2019-08-20
 description: ""
 tag: NLP
@@ -305,7 +305,3 @@ lda.update(corpus2)
 print(lda[doc_bow])
 
 ```
-
-
-
-#### Lda2Vec
