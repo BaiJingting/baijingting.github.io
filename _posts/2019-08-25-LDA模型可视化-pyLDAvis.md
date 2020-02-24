@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sklearn LDA vs. GenSim LDA，及pyLDAvis的LDA模型可视化"
+title: "LDA模型可视化-pyLDAvis"
 date: 2019-08-25
 description: ""
 tag: NLP
